@@ -17,11 +17,37 @@
   height: 60px;
  }
 
-
 /*******************************************************BULMA CAROUSEL CONFIGS*/
 .card-image{
   width: 1920px;
   height: 850px;
+  }
+
+  @media (max-width: 600px){
+    .card-image{
+      width: 100%;
+      height: 50vh;
+    }
+
+    .image.is-16by9{
+      padding-top: 120% !important;
+    }
+
+    .card-box{
+      height: auto !important;
+    }
+
+    footer {
+      height: fit-content !important;
+    }
+
+    .WALUGO{
+      position: static !important;
+    }
+
+    .hiddenResp{
+      display: none;
+    }
   }
 
 #slider .card-content{
@@ -206,13 +232,53 @@ border-radius: 3px 0 0 3px;
 
 
 /********************************************************** NOSOTROS PAGE */
-#img_containernosotros {
-  position:relative;
-  display:inline-block;
-  text-align:center;
+.nosotros-section-page{
+  display: flex;
+  justify-content: flex-start;
+  background-image: url("src/backgroundpink.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  align-content: center;
 }
-.buttonnosotros {
-  position:absolute;
+
+@media (max-width: 600px) {
+  .nosotros-section-page{
+    flex-direction: column;
+  }
+
+  .is-half2{
+    margin-bottom: 30px;
+  }
+}
+
+.column.is-half{
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  box-sizing: inherit;
+  margin-top: 50px;
+}
+
+.is-half2{
+  width: 80%;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  box-sizing: inherit;
+}
+
+.button-nosotros-page{
+  position:flex-start;
   bottom:280px;
   left:1130px;
   width:300px;
@@ -222,10 +288,14 @@ border-radius: 3px 0 0 3px;
   color: #EA846C;
   border-color: transparent;
   background-color: #F3ECD2;
+
+  
 }
 
-/********************************************************* PRODUCTOS PAGE*/
-#img_container {
+
+
+
+/********************************************************* PRODUCTOS PAGE**********************************
   position:relative;
   display:inline-block;
   text-align:center;
@@ -241,9 +311,84 @@ border-radius: 3px 0 0 3px;
   color: #B17447;
   border-color: transparent;
   background-color: #FCF2E6;
+}*/
+
+/************************************************* intento 9000000
+
+.productos-section-page{
+  margin-top: 110px;
+  display: grid;
+  justify-content: center;
 }
 
-/************************************************* BOOSTRAP CAROUSEL*/
+
+.columns.is-mobile{
+  margin-top: 10px;
+}
+
+.column1{
+  padding: 10px;
+  display: grid;
+  justify-content:center ;
+  box-sizing: inherit;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+
+  line-height: 20px;
+}
+
+*/
+
+
+/************************************************* intento 9000000*/
+.container-supreme {
+ 
+  background-image: url("src/backgroundbrown.png");
+  width: 100%;
+  height: 100%;
+  
+}
+.card-box {
+  
+  height: 700px;
+  border: 0px solid #ddd;
+  padding: 30px;
+  float: left;
+}
+.card-box .card-thumbnail {
+  height: 300px;
+  overflow: hidden;
+  transition: 1s;
+  
+}
+.card-box .card-thumbnail:hover {
+  transform: scale(1.2);
+}
+
+
+.button-vela {
+  width:200px;
+  height:50px;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #B17447;
+  border-color: transparent;
+  background-color: #FCF2E6;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /************************************************* INFO PAGE*/
 #img_containerinfo {
@@ -252,7 +397,7 @@ border-radius: 3px 0 0 3px;
   text-align:center;
 }
 .buttoninfo {
-  position:absolute;
+  position:relative;
   bottom:200px;
   left:400px;
   width:200px;
@@ -263,6 +408,7 @@ border-radius: 3px 0 0 3px;
   border-color: transparent;
   background-color: #FCF2E6;
 }
+
 
 /************************************************* FOOTER PAGE*/
 a:hover, a:focus {
@@ -301,6 +447,26 @@ footer {
 .WALUGO a img {
   max-height: 70px;
  }
+
+ .title-of-products{ 
+  position: center;
+  text-align: center;
+  font-size: 30px;
+  line-height: 100px;
+  color: #F3ECD2;
+  height: 60px;
+ }
+
+
+ .title-products{ 
+  position: center;
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+  color: #F3ECD2;
+  height: 60px;
+ }
+
 
 
 
