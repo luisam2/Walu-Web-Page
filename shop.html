@@ -82,19 +82,41 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
 
 <main>
   <header>
+
+    <!-- SEARCH BAR-->
+
+    <header
+    id="searchHeader"
+    class="text-center vertical-center alternate-background light-text "
+  >
+  <div class="container">
+    <div class="flex-row justify-center">
+      <div class="flex-small ">
+        <h2 class="search-title">Search</h2>
+      </div>
+      <div class="flex-small vertical-center" id="search">
+        <label for="searchInput"></label>
+        <input type="text" id="searchInput" />
+      </div>
+    </div>
+  </div>
+</header>
+
+    
+    <!-- PRODUCTS SORT, ORDER BY PRICES-->
     <ul class="indicator">
-      <li data-filter="Todos los productos" class="active"><a href="#">Todos los productos</a></li>
-      <li data-filter="Jabones"><a href="#">Jabones</a></li>
+      <li data-filter="Todos los productos" class="active"><a href="shop.html">Todos los productos</a></li>
+      <li data-filter="Jabón"><a href="#">Jabón</a></li>
       <li data-filter="Velas"><a href="#">Velas</a></li>
       <li data-filter="Shampoo"><a href="#">Shampoo</a></li>
       <li data-filter="cerillas"><a href="#">cerillas</a></li>
     </ul>
     <div class="filter-condition">
-      <span>Filtrar por</span>
+      <span>Orden de productos</span>
       <select name="" id="select">
         <option value="Default">Aleatorio</option>
-        <option value="LowToHigh">Precio más bajo al más alto</option>
-        <option value="HighToLow">Precio más arto al más bajo </option>
+        <option value="LowToHigh"> Del precio más bajo al más alto</option>
+        <option value="HighToLow">Del precio más alto al más bajo </option>
       </select>
     </div>
 
@@ -112,8 +134,8 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
              <span><i class="far fa-share-square"></i></span>
              <span><i class="fas fa-shopping-basket"></i></span>
           </p>
-          <strong>Jabón Liquido</strong>
-          <span>Aroma lavanda</span>
+          <span>Jabón Liquido Lavanda</span>
+          <strong>Jabón</strong>
           <small>!Comprar ahora!</small>
         </div>
         <h4>$30.000</h4>
@@ -130,8 +152,8 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
              <span><i class="far fa-share-square"></i></span>
              <span><i class="fas fa-shopping-basket"></i></span>
           </p>
-          <strong>Jabón solido</strong>
-          <span>Aroma lavanda</span>
+          <span>Jabón solido lavanda</span>
+          <strong>Jabón</strong>
           <small>!Comprar ahora!</small>
         </div>
         <h4>$40.000</h4>
@@ -249,6 +271,24 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
 
 <script src="script.js"></script>
 </main>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>

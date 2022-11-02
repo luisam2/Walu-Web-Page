@@ -564,17 +564,12 @@ picture img {
   background: var(--gra);
   cursor: pointer;
 }
-.detail > strong{
-  display: inherit;
-  margin: 20px;
-  font-size: 30px;
-  letter-spacing: 2px;
-  color: #555;
-}
+
 .detail > span{
   display: inherit;
   padding: 0 20px;
     width: 80%;
+    font-size: 30px;
 }
 .detail small{
   display: inline-block;
@@ -590,6 +585,15 @@ picture img {
       color: white;
       
 }
+
+.detail > strong{
+  display: inherit;
+  margin: 20px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #555;
+}
+
 li h4{
     position: absolute;
     right: 10px;
@@ -598,3 +602,5 @@ li h4{
     color: #555;
     
 }
+
+
